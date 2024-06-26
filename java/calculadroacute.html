@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA DE SUMA Y RESTA</title>
+    <link rel="stylesheet" href="styledecalcu.css">
+</head>
+<body>
+    <div calss="valueButtons1">
+        <button onclick="agregarNumero('1')">1</button>
+        <button onclick="agregarNumero('2')">2</button>
+        <button onclick="agregarNumero('3')">3</button>
+        <button onclick="agregarNumero('4')">4</button>
+        <button onclick="agregarNumero('5')">5</button>
+        <button onclick="agregarNumero('6')">6</button>
+        <button onclick="agregarNumero('7')">7</button>
+        <button onclick="agregarNumero('8')">8</button>
+        <button onclick="agregarNumero('9')">9</button>
+        <button onclick="agregarNumero('0')">0</button>
+        <p>valor 1 seleccionado: <span id="selectedValue1">0</span></p>
+    </div>
+    <div class="operationButtons">
+        <button onclick="agregarOperador('+')">+</button>
+        <button onclick="agregarOperador('-')">-</button>
+        <button onclick="agregarOperador('*')">*</button>
+        <button onclick="agregarOperador('/')">/</button>
+    </div>
+    <br>
+    <button onclick="calculateResult()">Calcular</button>
+    <h2>resultado: <span id="result">0</span></h2>
+    <script src="calcu.js"></script>
+</body>
+</html>
+
